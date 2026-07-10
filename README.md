@@ -1,55 +1,60 @@
-# Museum of Failures
+<div align="center">
+
+# 🏛️ Museum of Failures
+
+### _An immersive 3D exhibition where professional failures are framed in gold._
 
 > _"Your failures are not your identity. They are your expensive tutors."_
 
-An immersive 3D interactive museum built entirely on the web — where professional failures are not hidden, but framed in gold and displayed with pride.
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
+[![Three.js](https://img.shields.io/badge/Three.js-r184-000000?style=flat-square&logo=three.js)](https://threejs.org)
+[![React Three Fiber](https://img.shields.io/badge/R3F-9-black?style=flat-square)](https://r3f.docs.pmnd.rs)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
+[![Zustand](https://img.shields.io/badge/Zustand-5-433?style=flat-square)](https://zustand.docs.pmnd.rs)
 
-Walk through baroque doors, explore a candlelit exhibition hall, and click on 12 ornate paintings — each one a real failure from my journey as a freelancer, builder, and entrepreneur (2019–2025). No fluff. No filters. Just honest stories, hard lessons, and the receipts.
-
----
-
-![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)
-![Three.js](https://img.shields.io/badge/Three.js-r184-black?style=flat-square&logo=three.js)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.2-06B6D4?style=flat-square&logo=tailwindcss)
-![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite)
-![Zustand](https://img.shields.io/badge/Zustand-5-orange?style=flat-square)
+</div>
 
 ---
 
 ## The Concept
 
-LinkedIn is a museum of victories. Polished milestones, curated wins, humble brags.
+LinkedIn is a museum of victories — polished milestones, curated wins, humble brags.
 
-**This is the other museum.**
+**This is the other museum.** The one nobody builds. It shows the ghosted invoices, the launches nobody saw, the partnerships that dissolved, the burnout sprints, and the pitches that fell flat.
 
-The one nobody builds. The one that shows the ghosted invoices, the launches nobody saw, the partnerships that dissolved, the burnout sprints, and the pitches that fell flat. Each exhibit is a real story — with a timeline, a list of mistakes, and 3 hard-earned lessons.
-
-Because the people worth hiring aren't the ones who never failed. They're the ones who **framed their failures in gold** and kept walking.
+Walk through baroque doors into a candlelit hall and explore **12 ornate paintings** — each one a real failure from a freelancer/founder journey (2019–2025), with the story, the mistakes, and the hard-earned lesson. Because the people worth hiring aren't the ones who never failed. They're the ones who **framed their failures in gold** and kept walking.
 
 ---
 
-## What's Inside
+## ✨ Experience Highlights
 
-### The Experience
+| | Feature |
+|---|---|
+| 🚪 | **Cinematic entrance** — bronze museum doors that open on scroll _or_ a one-click **"Enter the Museum"** button |
+| 🖼️ | **12 interactive exhibits** — hover to glow, click to read; each frame carries an **engraved brass nameplate** (numeral · year + title) |
+| 🗂️ | **The Collection** — a full index of all 12 failures; click any card to walk the camera to that wall and open it |
+| 🎨 | **5 art themes** — Van Gogh, Klimt, Monet, Michelangelo, Da Vinci — each restyles the walls, lighting, and atmosphere, previewed with real painting thumbnails |
+| 💌 | **The Curator's Letter** — a personal note on the central bench |
+| 🔗 | **Deep-linkable** — every exhibit has its own URL (`/#exhibit-5`); share or bookmark a specific failure |
+| 📤 | **Share cards** — auto-generated 1200×630 image + native share sheet, X, LinkedIn, and copy-link |
+| 🎧 | **Ambient soundscape** — a procedurally generated drone + sparkle score (Web Audio) |
+| 🧭 | **Auto-tour mode** — hands-free camera pan across the halls (press `T`) |
+| ♿ | **Accessibility** — respects `prefers-reduced-motion`, keyboard navigation, focus states, high-contrast text |
 
-| Scene | Description |
-|-------|-------------|
-| **The Entrance** | Ornate bronze museum doors that open as you scroll — stone columns, golden lanterns, a starry night sky behind the threshold |
-| **The Hall** | A 3D exhibition room with polished reflective floors, baroque gold-framed paintings on three walls, floating particles, and cinematic teal-orange lighting |
-| **The Exhibits** | 12 interactive paintings — hover to see them glow, click to read the story of each failure |
-| **The Bench & Letter** | A wooden bench at the center holds a personal letter from the curator to every visitor |
+---
 
-### The 12 Exhibits
+## 🎨 The 12 Exhibits
 
-| # | Year | Title | One-Line Lesson |
-|---|------|-------|-----------------|
+| # | Year | Title | The Lesson |
+|:-:|:----:|-------|------------|
 | I | 2019 | The Ghosted Invoice | Contracts aren't optional — they're survival gear |
 | II | 2020 | The Feature Nobody Used | Build from research, not assumption |
 | III | 2021 | The Startup That Drowned | Validate before you build |
 | IV | 2021 | The Rebrand That Confused | Evolution, not revolution |
-| V | 2022 | The Client I Lost in a Day | 48 hours of silence can cost you €12,000 |
+| V | 2022 | The Client I Lost in a Day | 48 hours of silence can cost €12,000 |
 | VI | 2023 | When Perfectionism Paralysed | Shipping beats perfection — every time |
-| VII | 2024 | The Team That Imploded | Culture fit isn't a buzzword — it's the foundation |
+| VII | 2024 | The Team That Imploded | Culture fit is the foundation, not a buzzword |
 | VIII | 2022 | The Partnership That Dissolved | Handshakes aren't contracts |
 | IX | 2023 | The Burnout Sprint | Greed disguised as ambition will break you |
 | X | 2024 | The Launch That Nobody Saw | Build in public or build in vain |
@@ -58,73 +63,95 @@ Because the people worth hiring aren't the ones who never failed. They're the on
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 | Layer | Technology | Why |
 |-------|-----------|-----|
-| **UI Framework** | React 19 | Component architecture for modular scene management |
-| **3D Engine** | Three.js r184 + React Three Fiber 9 | WebGL-powered 3D rendering with React's declarative model |
-| **3D Utilities** | React Three Drei 10 | Higher-level abstractions for camera, lighting, and controls |
-| **State Management** | Zustand 5 | Lightweight reactive state across scenes, camera, modals, and interactions |
-| **Styling** | Tailwind CSS 4 | Rapid UI styling for overlays, modals, and responsive layouts |
-| **Animation** | GSAP 3 + useFrame loops | Smooth tweening for doors, cameras, particles, and hover effects |
-| **Build Tool** | Vite 8 | Lightning-fast HMR and optimized production builds |
-| **Textures** | Canvas API (procedural) | Every texture — starry night walls, gold frames, floor tiles, paintings — is generated in code. Zero image assets. |
+| **UI** | React 19 | Component architecture for modular scenes |
+| **3D Engine** | Three.js r184 + React Three Fiber 9 | Declarative WebGL rendering |
+| **3D Helpers** | React Three Drei 10 | Camera, controls, abstractions |
+| **State** | Zustand 5 | Lightweight reactive store across scenes, camera, overlays |
+| **Styling** | Tailwind CSS 4 | Overlays, modals, responsive layouts |
+| **Animation** | Framer Motion + GSAP + `useFrame` | Modals, doors, cameras, particles |
+| **Type** | Fraunces · Playfair Display · IM Fell · Poppins | Editorial serif display + clean sans body |
+| **Build** | Vite 8 | Instant HMR, optimized static builds |
 
 ---
 
-## Technical Highlights
+## 🧠 Engineering Highlights
 
-- **1,800+ procedurally generated 3D meshes** — every frame has ~150 meshes (baroque borders, corner ornaments, bead moldings, spotlights, nameplates)
-- **Procedural texture generation** — a 2048x2048 Starry Night-inspired canvas texture with swirls, brush strokes, star bursts, and a crescent moon — all drawn with math
-- **500-particle floating system** — individual physics per particle with sine/cosine oscillation and vertical drift
-- **12+ dynamic light sources** — hemisphere, ambient, point, and spot lights with cinematic teal-orange color grading
-- **Scroll-to-3D bridge** — continuous real-time mapping of scroll/touch input to 3D door rotation with smooth easing
-- **Multi-target camera controller** — 5 predefined views with smooth lerp interpolation for cinematic camera movement
-- **Complex material system** — MeshStandardMaterial, MeshPhysicalMaterial with clearcoat (mirror floors), emissive textures, and metallic gold at 0.85+ metalness
-- **Zero external assets** — no images, no 3D models, no CDN dependencies. Everything is code.
-- **Touch & mobile ready** — full gesture support with responsive canvas rendering
+- **Procedurally generated art** — walls, gold frames, floor tiles, painting canvases, and engraved nameplates are all drawn in code via the Canvas API. Minimal image assets.
+- **Custom SVG icon system** — one professional line icon per exhibit, rendered both as React components and drawn onto 3D canvas textures so the paintings, index, and share cards stay in sync.
+- **Scroll-to-3D bridge** — continuous real-time mapping of scroll/touch input to door rotation with eased interpolation.
+- **Multi-target camera controller** — smooth `lerp` transitions between panoramic, per-wall, and bench views.
+- **Live theme engine** — switching themes lerps every wall material, light, fog, and background color in real time.
+- **Reduced-motion aware** — particle drift, breathing, and camera bob gracefully disable for motion-sensitive users.
+- **WebGL context recovery** — the scene restores instead of freezing after a lost GPU context.
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/museum-of-failures.git
-
-# Install dependencies
+# Install
 npm install
 
-# Start the development server
+# Dev server (http://localhost:5173)
 npm run dev
 
-# Build for production
+# Production build → dist/
 npm run build
+
+# Preview the production build
+npm run preview
+```
+
+---
+
+## 🌐 Deployment
+
+This is a fully static site — deploy the `dist/` folder anywhere:
+
+- **Netlify / Vercel / Cloudflare Pages** — connect the repo or drag-drop `dist/`. Zero config.
+- **cPanel / any static host** — upload the contents of `dist/` to `public_html`. Routing uses hash URLs, so no `.htaccess` rewrites are needed.
+- **Subfolder deploys** — set `base: '/your-subfolder/'` in `vite.config.js` before building.
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Experience.jsx        # R3F <Canvas> root
+│   ├── DoorScene.jsx         # Entrance doors
+│   ├── MuseumHall.jsx        # Walls, floor, lighting, theme engine
+│   ├── PaintingFrame.jsx     # Interactive gold frame + nameplate
+│   ├── CameraController.jsx  # Multi-view camera lerp
+│   ├── Bench.jsx · Particles.jsx · Lighting.jsx
+│   └── UI/                   # Hero, Navigation, Index, Overlays, ShareCard, ThemePicker…
+├── data/
+│   ├── exhibits.js           # The 12 stories
+│   └── icons.jsx             # SVG icon set (React + canvas)
+├── store/useMuseumStore.js   # Zustand state
+├── themes/index.js           # 5 art themes
+└── utils/textures.js         # Procedural canvas textures
 ```
 
 ---
 
 ## The Philosophy
 
-Most portfolios say: _"Look what I built."_
+Most portfolios say: _"Look what I built."_ This one says: _"Look what broke me — and what I built from the wreckage."_
 
-This one says: _"Look what broke me — and what I built from the wreckage."_
-
-Every senior developer, every seasoned founder, every battle-tested freelancer has a museum like this. Most of them just keep the doors locked. This one is open.
+Every seasoned builder has a museum like this. Most keep the doors locked. **This one is open.**
 
 ---
 
-## Who This Is For
+<div align="center">
 
-- **Hirers** looking for engineers who've been through the fire — not just the ones with clean GitHub graphs
-- **Builders** who need a reminder that failure is the curriculum, not the dropout
-- **Anyone** who's ever had a launch nobody saw, a client who ghosted, or a project that ate them alive
+_Built with React, Three.js, and an uncomfortable amount of honesty._
 
----
+**[Deepanshu Verma](https://github.com/deepanshuvermaa)**
 
-> _"Visit the Museum of Glory when you're ready for the highlight reel. But this? This is where the real story lives."_
-
----
-
-Built with React, Three.js, and an uncomfortable amount of honesty.
+</div>
