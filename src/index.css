@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #FFD54F;
+  --color-gold-light: #FFE082;
+  --color-gold-dark: #C9A227;
+  --color-deep: #1B2771;
+  --color-indigo: #202E6A;
+  --color-night: #01020E;
+  --color-sky: #2174DF;
+  --color-cream: #F5F3EE;
+  --color-cream-dim: #D4C5A0;
+  --font-fraunces: 'Fraunces', 'Playfair Display', serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-cormorant: 'Cormorant Garamond', serif;
+  --font-fell: 'IM Fell English', serif;
+  --font-oswald: 'Oswald', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-opensans: 'Open Sans', sans-serif;
+  --font-dancing: 'Dancing Script', cursive;
+  --font-lobster: 'Lobster', cursive;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #050508;
+  font-family: 'Cormorant Garamond', serif;
+  cursor: default;
+  color: #F5F3EE;
+}
+
+button {
+  font-family: inherit;
+  outline: none;
+}
+button:focus-visible {
+  outline: 1px solid #FFD54F;
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,213,79,0.3); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,213,79,0.5); }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes chevron-bounce {
+  0%, 100% { transform: translateY(0) rotate(45deg); }
+  50% { transform: translateY(-8px) rotate(45deg); }
+}
+@keyframes sparkle-float {
+  0%, 100% { opacity: 0; transform: translateY(0) scale(0); }
+  20% { opacity: 1; transform: translateY(-10px) scale(1); }
+  80% { opacity: 0.6; transform: translateY(-40px) scale(0.8); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes lamp-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+@keyframes star-twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Responsive: hide left painting panel on narrow screens */
+@media (max-width: 768px) {
+  .exhibit-left-panel {
+    display: none !important;
+  }
+}

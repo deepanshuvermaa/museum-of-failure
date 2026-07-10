@@ -1,0 +1,142 @@
+// Theme definitions for the Museum of Failures
+// wallTexture = path to the painting used on museum walls
+// wallTint = color multiplier on the texture (bright = visible, tinted = mood)
+
+// tileMode: 'repeat' = pattern painting (tiles across walls), 'stretch' = scene painting (one image per wall)
+export const THEMES = {
+  starryNight: {
+    name: 'Starry Night',
+    artist: 'Van Gogh',
+    description: 'Contemplative, deep blue and gold swirls',
+    icon: '\u25D0',
+    wallTexture: '/starry-night.jpg',
+    tileMode: 'repeat',
+    wallTint: '#d0d8e8',
+    wallEmissive: '#0a1020',
+    fogColor: '#030308',
+    floorColor: '#1a1510',
+    goldColor: '#C9A84C',
+    goldEmissive: '#8B6914',
+    accentColor: '#FFD54F',
+    pillarColor: '#101840',
+    lightColors: {
+      hemisphere: { sky: '#6688bb', ground: '#FFD54F', intensity: 1.2 },
+      ambient: { color: '#ffffff', intensity: 1.4 },
+      overhead: { color: '#ffffff', intensity: 3.0 },
+      accent: { color: '#fff5e0', intensity: 1.8 },
+      floor: { color: '#FFD54F', intensity: 0.15 },
+    },
+    particleColor: '#C9A84C',
+    particleOpacity: 0.2,
+  },
+
+  klimt: {
+    name: 'Klimt Gold',
+    artist: 'Gustav Klimt',
+    description: 'Intimate, golden mosaic patterns',
+    icon: '\u2726',
+    wallTexture: '/klimt.jpg',
+    tileMode: 'repeat',
+    wallTint: '#e8d0a0',
+    wallEmissive: '#1a1008',
+    fogColor: '#0a0804',
+    floorColor: '#1a1408',
+    goldColor: '#E8D080',
+    goldEmissive: '#C9A84C',
+    accentColor: '#E8CC80',
+    pillarColor: '#2a1c08',
+    lightColors: {
+      hemisphere: { sky: '#aa8844', ground: '#E8D080', intensity: 1.0 },
+      ambient: { color: '#fff5e0', intensity: 1.2 },
+      overhead: { color: '#FFE082', intensity: 2.5 },
+      accent: { color: '#FFD54F', intensity: 1.5 },
+      floor: { color: '#E8D080', intensity: 0.2 },
+    },
+    particleColor: '#E8D080',
+    particleOpacity: 0.25,
+  },
+
+  monet: {
+    name: 'Monet Garden',
+    artist: 'Claude Monet',
+    description: 'Peaceful, soft green and lavender',
+    icon: '\u2248',
+    wallTexture: '/monet.jpg',
+    tileMode: 'repeat',
+    wallTint: '#c8e0c0',
+    wallEmissive: '#081210',
+    fogColor: '#040808',
+    floorColor: '#121a14',
+    goldColor: '#8BAA7A',
+    goldEmissive: '#4A6A3A',
+    accentColor: '#C8E6B8',
+    pillarColor: '#0a1a14',
+    lightColors: {
+      hemisphere: { sky: '#88aa88', ground: '#E8C8D0', intensity: 1.3 },
+      ambient: { color: '#f0fff0', intensity: 1.5 },
+      overhead: { color: '#ffffff', intensity: 2.8 },
+      accent: { color: '#f0e8d8', intensity: 1.6 },
+      floor: { color: '#88aa88', intensity: 0.15 },
+    },
+    particleColor: '#C8E6B8',
+    particleOpacity: 0.18,
+  },
+
+  creation: {
+    name: 'Creation',
+    artist: 'Michelangelo',
+    description: 'Classical, warm marble and fresco',
+    icon: '\u270B',
+    wallTexture: '/creation.jpg',
+    tileMode: 'stretch',
+    wallTint: '#d8ccc0',
+    wallEmissive: '#100c08',
+    fogColor: '#080604',
+    floorColor: '#1a1614',
+    goldColor: '#B8986A',
+    goldEmissive: '#7A5A2A',
+    accentColor: '#D4B896',
+    pillarColor: '#1a1410',
+    lightColors: {
+      hemisphere: { sky: '#998877', ground: '#D4B896', intensity: 1.1 },
+      ambient: { color: '#fff8f0', intensity: 1.3 },
+      overhead: { color: '#ffe8d0', intensity: 2.8 },
+      accent: { color: '#ffe0c0', intensity: 1.6 },
+      floor: { color: '#D4B896', intensity: 0.18 },
+    },
+    particleColor: '#D4B896',
+    particleOpacity: 0.15,
+  },
+
+  lastSupper: {
+    name: 'Last Supper',
+    artist: 'Da Vinci',
+    description: 'Renaissance, warm candlelit amber',
+    icon: '\u2727',
+    wallTexture: '/last-supper.jpg',
+    tileMode: 'stretch',
+    wallTint: '#d0c0a8',
+    wallEmissive: '#120e08',
+    fogColor: '#060504',
+    floorColor: '#1a1510',
+    goldColor: '#C0A060',
+    goldEmissive: '#8A6A30',
+    accentColor: '#D8C090',
+    pillarColor: '#1a1408',
+    lightColors: {
+      hemisphere: { sky: '#887766', ground: '#D8C090', intensity: 1.0 },
+      ambient: { color: '#fff5e0', intensity: 1.2 },
+      overhead: { color: '#FFE8C0', intensity: 2.4 },
+      accent: { color: '#FFD8A0', intensity: 1.4 },
+      floor: { color: '#C0A060', intensity: 0.18 },
+    },
+    particleColor: '#D8C090',
+    particleOpacity: 0.15,
+  },
+};
+
+export function getTheme(key) {
+  return THEMES[key] || THEMES.starryNight;
+}
+
+export const THEME_KEYS = Object.keys(THEMES);
